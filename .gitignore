@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django generated files
+*.log
+*.pot
+*.pyc
+# db.sqlite3
+media/
+static/
+
+# Ignore local settings file which may contain sensitive information
+myproject/settings/local.py
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore pipenv virtual environment
+.env/
+env/
+/env
+# Ignore any other files or directories you want

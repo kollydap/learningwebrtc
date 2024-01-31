@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Player</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px; /* Increased padding */
+        box-sizing: border-box; /* Ensure padding and border are included in total width */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #form-container {
+        text-align: center;
+        margin-bottom: 20px; /* Increased margin */
+    }
+    #video-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    video {
+        max-width: 100%;
+    }
+    #username-input, #chat-input { /* Added chat input */
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 300px; /* Adjust width as needed */
+    }
+    #submit-btn, #mute-btn, #send-btn { /* Adjusted buttons */
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    #submit-btn:hover, #mute-btn:hover, #send-btn:hover { /* Hover state */
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <div id="form-container">
+        <input type="text" id="username-input" placeholder="Enter username">
+        <button id="submit-btn">Submit</button>
+        <input type="text" id="chat-input" placeholder="Enter message"> <!-- Chat input -->
+        <button id="send-btn">Send</button> <!-- Send button -->
+    </div>
+    <div id="video-container">
+        <video controls>
+            <source src="your-video-source.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <script type="text/javascript" src="{}"></script>
+</body>
+</html>
